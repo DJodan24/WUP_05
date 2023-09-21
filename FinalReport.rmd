@@ -21,7 +21,7 @@ A new  preventative aides drug (triUmpsal) is under test in clinical trials. Con
 ```{r}
 drug_user <- filter(triUmp,DrugUser =="yes")
 
-drug
+drug_user
 ```
 
 # Methods
