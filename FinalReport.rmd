@@ -18,15 +18,15 @@ druguser <- triUmp %>% filter(DrugUser=="yes")
 
 A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the DrugUsers, does this drug seem effective?  Hint - use dplyr to obtain that subpopulation with the filter command.
 
+# Methods
+
+<!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
+
 ```{r include=FALSE}
 drug_user <- filter(triUmp,DrugUser =="yes")
 
 drug_user
 ```
-
-# Methods
-
-<!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
 # Results
 
@@ -42,6 +42,8 @@ drug_user
 barchartGC(~infected + treatment ,data=drug_user)
 barchartGC(~treatment + infected ,data=drug_user,type ="percent")
 ```
+
+The people who ended up with aids, most of them had been given the placebo. With the people who were not given anything, the results are about the same. This shows us that the vaccine is working against contracting aids. 
 
 ### Numerical Descriptive Results
 
@@ -64,7 +66,6 @@ chisq.test(table1)
 ```{r}
 chisqtestGC(table1)
 ```
-
 
 ```{r}
 fisher.test(table1)
