@@ -72,6 +72,9 @@ chisqtestGC(table1)
 ```{r}
 fisher.test(table1)
 ```
+
+In our results, it tells us that we had 34 people out of 140 who got aids with the drug and the other 106 did with the placebo. Out of the 2,402 people who did not get aids, 1143 of them were given the drug and the other 1259 were given the placebo. There is a chance of 0.0000000423 of getting these results for the Chi-squared test. With the Fisher's Exact test shows us that the odds ratio is 0.35. 
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
