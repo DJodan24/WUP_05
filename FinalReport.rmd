@@ -65,6 +65,7 @@ chisq.test(table1)
 chisqtestGC(table1)
 ```
 
+
 ```{r}
 fisher.test(table1)
 ```
